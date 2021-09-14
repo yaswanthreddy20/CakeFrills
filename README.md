@@ -1,0 +1,15 @@
+Files:
+1. hw1.py   
+    a. the function KNN in this file has the implementation of the K-Nearest Neighbors Algorithm
+    b. the function preProcess in this file has all the steps I followed for pre-processing the given dataset, stemming
+    c. I have used k as 137 in the KNN to get an accuracy of 80. I obtained this k values after running the cross validation
+    d. use the command python hw1.py to run this file and this generates the Predictions.txt file which will have the polarities of all the reviews in the test data given
+2. hw1_cv.py 
+    a. this file has the KFold cross validation implementation to test the accuracy of the polarities with the help of train data
+    b. use python hw1_cv.py to run this file and get the K value that has high accuracy in prediction
+3. test.txt
+    a. it has the given test data
+4. train.txt
+    a. it has the given train data
+5. Predictions.txt
+    a. it has the predicted polarities of all the reviews in the test data
