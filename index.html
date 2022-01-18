@@ -1,48 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
     <title>CakeFrills</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
-</head>
+    <meta charset="utf-8">
 
-<body class="min-vh-100 d-flex flex-column">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-                <a class="navbar-brand" href="#">
-                    
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-                    
-                    <!--<img src="assets/images/logo.svg" alt="logo">-->
-                </a>
-                <!--<span class="navbar-text ml-auto d-none d-sm-inline-block">978-130-5444 </span>
-                <span class="navbar-text d-none d-sm-inline-block">jerald_glover@glennie.tv</span>-->
-            </nav>
+    
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+      
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+      </style>
+  </head>
+  <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200"onload="typeWriter()">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">CakeFrills </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link"href=""data-toggle="modal" data-target="#reservationModal">Contact Us</a></li>
+            <li class="nav-item ftco-animate"><a href="https://www.facebook.com/Cakefrill" class="nav-link" target="_blank"><span class="icon-facebook"></span></a></li>
+            <li class="nav-item ftco-animate"><a href="https://www.instagram.com/cakefrills/" class="nav-link" target="_blank"><span class="icon-instagram"></span></a></li>
+          </ul>
         </div>
-    </header>
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title">We're coming soon</h1>
-            <!--<p class="page-description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu sit amet consectetur
-            </p>-->
-            <p>Stay connected</p>
-            <nav class="footer-social-links">
-                <a href="https://www.facebook.com/Cakefrill" target="_blank" class="social-link"><i class="mdi mdi-facebook-box"></i></a>
-                
-                <a href="https://www.instagram.com/cakefrills/" target="_blank"class="social-link"><i class="mdi mdi-instagram"></i></a>
-                <a href="mailto:myr3216@gmail.com" class="social-link"><i class="mdi mdi-email"></i></a>
-                
-            </nav>
-        </div>
-    </main>
-</body>
+      </div>
+    </nav>
+    <!-- END nav -->
 
+    <section class="ftco-cover" style="background-image: url(images/home.jpg);" id="section-home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center ftco-vh-100">
+          <div class="col-md-12">
+            <h1 class="ftco-heading ftco-animate mb-3">Welcome To CakeFrills</h1>
+            <h2 class="h5 ftco-subheading mb-5 ftco-animate"  id="subheading"></h2>    
+            <p><a class="btn btn-outline-white ftco-animate" data-toggle="modal" data-target="#reservationModal" >Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- END section -->
+    <section class="ftco-section" id="section-gallery">
+      <div class="container">
+        <div class="row ftco-custom-gutters">
+
+          <div class="col-md-12 text-center mb-5 ftco-animate">
+            <h2 class="display-4">Recently Baked Cakes</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">Hi There, Thank you for showing interest in CakeFrills. All the below cakes are baked by me at home.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/BD1.jpg" style="width:100%">
+    <img src="images/BD2.jpg" style="width:100%">
+    <img src="images/BD3.jpg" style="width:100%">
+    <img src="images/BD4.jpg" style="width:100%">
+    <img src="images/BD5.jpg" style="width:100%">
+    <img src="images/BD6.jpg" style="width:100%">
+    <img src="images/BD7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/BD8.jpg" style="width:100%">
+    <img src="images/BD9.jpg" style="width:100%">
+    <img src="images/BD10.jpg" style="width:100%">
+    <img src="images/BD11.jpg" style="width:100%">
+    <img src="images/BD12.jpg" style="width:100%">
+    <img src="images/BD13.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/BD14.jpg" style="width:100%">
+    <img src="images/BD15.jpg" style="width:100%">
+    <img src="images/BD16.jpg" style="width:100%">
+    <img src="images/BD17.jpg" style="width:100%">
+    <img src="images/BD18.jpg" style="width:100%">
+    <img src="images/BD19.jpg" style="width:100%">
+    <img src="images/BD20.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/BD21.jpg" style="width:100%">
+    <img src="images/BD22.jpg" style="width:100%">
+    <img src="images/BD23.jpg" style="width:100%">
+    <img src="images/BD24.jpg" style="width:100%">
+    <img src="images/BD25.jpg" style="width:100%">
+    <img src="images/BD26.jpg" style="width:100%">
+  </div>
+</div>
+
+
+      
+      </div>
+    </section>
+   
+
+    <!-- END section -->
+    <footer class="ftco-footer ftco-bg-dark" style="padding-bottom: 1px;">
+      <div class="container" style="padding-top: 20px;">
+        <div class="row mb-3"style="padding-bottom: 0px;">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="row ftco-animate">
+                <div class="col-md text-left"style="padding-top: 20px;">
+                  <p>&copy;CakeFrills 2022. Made with <span class="icon-heart text-danger"></span>  by <a href="https://yaswanthreddy20.github.io/" target="blank">Yash</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"style="padding-bottom: 0px;">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
+                <li class="ftco-animate"><a href="https://www.facebook.com/Cakefrill" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/cakefrills/" target="_blank"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </footer>
+
+    
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+ 
+              <div class="col-lg-12 p-5">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
+                </button>
+                <form action="#" method="post">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFgMjVeJ5FLpfMy1vUdakMy6kMUbsXAnTpM7qzB0dHznIvKw/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Modal -->
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      var i = 0;
+      var txt = 'Celebrate in Style';
+      var speed = 50;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("subheading").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+  </body>
 </html>
